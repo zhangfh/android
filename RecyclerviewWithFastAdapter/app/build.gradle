@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "27.0.1"
+
+    defaultConfig {
+        applicationId "com.lst.burns.recyclerviewwithfastadapter"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    // used to fill the RecyclerView with the items
+    // and provides single and multi selection, expandable items
+    // https://github.com/mikepenz/FastAdapter
+    compile 'com.mikepenz:fastadapter:3.0.4@aar'
+
+    // used to base on some backwards compatible themes
+    // contains util classes to support various android versions, and clean up code
+    // comes with the awesome "Holder"-Pattern
+    // https://github.com/mikepenz/Materialize
+    compile 'com.mikepenz:materialize:1.1.2@aar'
+
+    //used to generate the drawer on the left
+    //https://github.com/mikepenz/MaterialDrawer
+    compile('com.mikepenz:materialdrawer:6.0.0@aar') {
+        transitive = true
+        exclude group: "com.mikepenz"
+    }
+
+
+}

@@ -4,3 +4,4 @@
 3.Weather
 4.Toolbar (set navigation bar color) 
 5.Iconnics使用
+6.recyclerview fastadapter
