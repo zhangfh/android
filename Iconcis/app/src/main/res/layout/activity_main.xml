@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lst.burns.iconcis.MainActivity">
+
+
+
+
+    <com.mikepenz.iconics.view.IconicsImageView
+        android:id="@+id/iconicsImageView1"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+
+        app:iiv_icon="fou-volume"
+        app:iiv_color="@color/colorPrimary"
+        app:iiv_size="36dp"
+
+        android:layout_centerHorizontal="true"/>
+
+    <com.mikepenz.iconics.view.IconicsImageView
+        android:id="@+id/iconicsImageView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        app:iiv_icon="gmd-sort"
+        app:iiv_color="@color/colorPrimary"
+        app:iiv_size="36dp"
+        android:layout_below="@+id/iconicsImageView1"
+        android:layout_alignEnd="@+id/iconicsButton"/>
+
+
+
+    <com.mikepenz.iconics.view.IconicsButton
+        android:id="@+id/iconicsButton"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{gmd-sort} IconicsButton"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"/>
+
+
+
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="{wic-moonrise}This is a Weather-Iconics, use wic replace wi"
+        android:id="@+id/view"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
