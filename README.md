@@ -6,3 +6,5 @@
 5.Iconnics使用
 6.recyclerview fastadapter
 7.timeline recyclerview adapter timeline.
+8.photoedit load picture ,edit use canvas
+9.lockscreen
