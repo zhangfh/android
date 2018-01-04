@@ -9,3 +9,4 @@
 8.photoedit load picture ,edit use canvas
 9.lockscreen
 10.IntentService
+11.opensourcedemo -- add library
