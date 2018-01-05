@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GuideView</string>
+    <string name="add_friend">添加好友在这里哦</string>
+    <string name="nearby">NearBy</string>
+</resources>
