@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--play菜单-->
+    <item
+        android:id="@+id/action_play"
+        android:icon="@drawable/ic_play_arrow_black_36dp"
+        android:orderInCategory="90"
+        android:title="play"
+        app:showAsAction="ifRoom" />
+    <!--stop菜单-->
+    <item
+        android:id="@+id/action_stop"
+        android:icon="@drawable/ic_pause_black_36dp"
+        android:orderInCategory="100"
+        android:title="stay"
+        app:showAsAction="ifRoom" />
+</menu>
