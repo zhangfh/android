@@ -17,3 +17,5 @@
 	 Toolbox
 	 Toolbox + menu
 	 Drawer
+	 cardview
+	 fragment

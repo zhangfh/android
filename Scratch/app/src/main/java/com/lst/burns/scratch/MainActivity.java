@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButton_CustomTheme2;
     private Button mButton_AddToolbox;
     private Button mButton_DrawerLayout;
+    private Button mButton_CardView;
+    private Button mButton_Fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mButton_DrawerLayout= (Button)findViewById(R.id.adddrawer);
         mButton_DrawerLayout.setOnClickListener(this);
+
+        mButton_CardView = (Button)findViewById(R.id.addcardview);
+        mButton_CardView.setOnClickListener(this);
+
+        mButton_Fragment = (Button)findViewById(R.id.addfragment);
+        mButton_Fragment.setOnClickListener(this);
     }
 
     @Override
@@ -40,10 +48,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.customtheme2:
                 i = new Intent(this,CustomThemeActivity2.class);
+                break;
             case R.id.addtoolbox:
                 i = new Intent(this,AddToolBox.class);
+                break;
             case R.id.adddrawer:
                 i = new Intent(this,AddDrawerLayout.class);
+                break;
+            case R.id.addcardview:
+                i = new Intent(this,AddCardView.class);
+                break;
+            case R.id.addfragment:
+                i = new Intent(this,AddFragment.class);
             default:
                 break;
         }

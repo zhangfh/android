@@ -20,6 +20,8 @@
             android:theme="@style/UAmpAppTheme"></activity>
         <activity android:name=".AddToolBox"></activity>
         <activity android:name=".AddDrawerLayout"></activity>
+        <activity android:name=".AddCardView"></activity>
+        <activity android:name=".AddFragment"></activity>
     </application>
 
 </manifest>

@@ -34,4 +34,16 @@
         android:id="@+id/adddrawer"
         android:layout_below="@id/addtoolbox"
         android:text="add Drawer Layout"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addcardview"
+        android:layout_below="@id/adddrawer"
+        android:text="add Card View"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addfragment"
+        android:layout_below="@id/addcardview"
+        android:text="add Fragment View"/>
 </RelativeLayout>
