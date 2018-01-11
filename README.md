@@ -18,7 +18,7 @@
 	 Toolbox + menu
 	 Drawer
 	 cardview
-	 fragment
+	 fragment  fragment as a view in layout (activity_fragment.xml)
 	 activity in different process
 	 CoordinatorLayout toolbar FloatingActionButton 
 	 BaseActivity  to use.
@@ -26,3 +26,4 @@
 	 httpserver  -- emulator cannot access
 	 add scrollview 
 	 Service , Intent Service , Service (throught Messenger send message)
+	 Fragment  use fragmentmanager add, create basefragment(FragmentActivity)

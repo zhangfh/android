@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButton_UseNotification;
     private Button mButton_StartHttpServer;
     private Button mButton_ServiceTest;
+    private Button mButton_AddBaseFragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +69,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mButton_ServiceTest = (Button)findViewById(R.id.servicetest);
         mButton_ServiceTest.setOnClickListener(this);
+
+        mButton_AddBaseFragment = (Button)findViewById(R.id.addbasefragment);
+        mButton_AddBaseFragment.setOnClickListener(this);
+
     }
 
     @Override
@@ -111,7 +117,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.servicetest:
                 i = new Intent(this,ServiceActivity.class);
                 break;
-
+            case R.id.addbasefragment:
+                i = new Intent(this,FragmentActivity.class);
             default:
                 break;
         }

@@ -91,5 +91,12 @@
         android:layout_below="@id/starthttpserver"
         android:text="android Server Test"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addbasefragment"
+        android:layout_below="@id/servicetest"
+        android:text="add Base Fragment"/>
+
 </RelativeLayout>
 </ScrollView>

@@ -19,6 +19,10 @@ import com.lst.burns.scratch.service.ConvertService;
 import com.lst.burns.scratch.service.MyIntentService;
 import com.lst.burns.scratch.service.MyService;
 
+//common service : MyService
+//ServiceIntent:  MyIntentService
+//communication by messenger and service: ConvertService.
+
 public class ServiceActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button mButton_Start_Intent_Service;
