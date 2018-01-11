@@ -42,9 +42,16 @@
         <activity android:name=".CoordinatorLayoutActivity"></activity>
         <activity android:name=".ExtendActivity"></activity>
 
+        <activity android:name=".HttpServerActivity"></activity>
+        <service
+            android:name=".service.WebService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
 
 
 
     </application>
-
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

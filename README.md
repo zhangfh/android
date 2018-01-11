@@ -22,3 +22,6 @@
 	 activity in different process
 	 CoordinatorLayout toolbar FloatingActionButton 
 	 BaseActivity  to use.
+	 Notification
+	 httpserver  -- emulator cannot access
+	 add scrollview 

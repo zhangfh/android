@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="bt_accent">#00B8D4</color>
+    <color name="battery_saver_mode_color">#fff4511e</color>
 </resources>

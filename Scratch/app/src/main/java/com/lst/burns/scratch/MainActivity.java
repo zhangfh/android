@@ -1,12 +1,20 @@
 package com.lst.burns.scratch;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
+
+    private static final String ACTION_DISMISSED_WARNING = "PNW.dismissedWarning";
+    private static final String ACTION_SHOW_BATTERY_SETTINGS = "PNW.batterySettings";
 
     private Button mButton_CustomTheme;
     private Button mButton_CustomTheme2;
@@ -17,6 +25,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButton_NewActivity;
     private Button mButton_Coordinator;
     private Button mButton_UseBaseActivity;
+    private Button mButton_UseNotification;
+    private Button mButton_StartHttpServer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +58,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mButton_UseBaseActivity = (Button)findViewById(R.id.usebaseactivity);
         mButton_UseBaseActivity.setOnClickListener(this);
+
+        mButton_UseNotification = (Button)findViewById(R.id.usenotification);
+        mButton_UseNotification.setOnClickListener(this);
+
+        mButton_StartHttpServer = (Button)findViewById(R.id.starthttpserver);
+        mButton_StartHttpServer.setOnClickListener(this);
     }
 
     @Override
@@ -81,9 +98,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.usebaseactivity:
                 i = new Intent(this,ExtendActivity.class);
                 break;
+            case R.id.usenotification:
+                //this is a special case;
+                startNotification();
+                return;
+            case R.id.starthttpserver:
+                i = new Intent(this,HttpServerActivity.class);
+                break;
             default:
                 break;
         }
         startActivity(i);
+    }
+
+    private void startNotification(){
+        final Notification.Builder nb = new Notification.Builder(MainActivity.this)
+                .setSmallIcon(R.drawable.ic_launcher)
+                // Bump the notification when the bucket dropped.
+                .setWhen(System.currentTimeMillis())
+                .setShowWhen(false)
+                .setContentTitle("This is notification")
+                .setContentText("5%")
+                .setOnlyAlertOnce(true)
+                .setDeleteIntent(pendingBroadcast(ACTION_DISMISSED_WARNING))
+                .setPriority(Notification.PRIORITY_MAX)
+                .setVisibility(Notification.VISIBILITY_PUBLIC)
+                .setColor(MainActivity.this.getResources().getColor(R.color.battery_saver_mode_color));
+
+        nb.setContentIntent(pendingBroadcast(ACTION_SHOW_BATTERY_SETTINGS));
+        final Notification n = nb.build();
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(0x123, n);
+    }
+    private PendingIntent pendingBroadcast(String action) {
+        Log.d("ZFH","pendingBroadcast");
+        return PendingIntent.getBroadcast(this,0,new Intent(action),0);
+
     }
 }
