@@ -46,4 +46,22 @@
         android:id="@+id/addfragment"
         android:layout_below="@id/addcardview"
         android:text="add Fragment View"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newactivity"
+        android:layout_below="@id/addfragment"
+        android:text="create activity in different process"/>
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/usecoordinatory"
+    android:layout_below="@id/newactivity"
+    android:text="use coordinatory"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usebaseactivity"
+        android:layout_below="@id/usecoordinatory"
+        android:text="use base activity"/>
 </RelativeLayout>

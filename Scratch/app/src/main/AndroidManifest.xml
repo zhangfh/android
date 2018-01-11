@@ -22,6 +22,29 @@
         <activity android:name=".AddDrawerLayout"></activity>
         <activity android:name=".AddCardView"></activity>
         <activity android:name=".AddFragment"></activity>
+
+        <activity android:name=".NewActivity" android:process = "com.lst.burns.scratch.mainprocess"></activity>
+
+        <activity android:name=".SubActivityInProcess" android:process = "com.lst.burns.scratch.mainprocess">
+            <intent-filter>
+                <action android:name="com.lst.burns.scratch.subactivity.in.process" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SubActivityInNewProcess" android:process = "com.lst.burns.scratch.newprocess">
+
+            <intent-filter>
+                <action android:name="com.lst.burns.scratch.subactivity.in.new.process" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CoordinatorLayoutActivity"></activity>
+        <activity android:name=".ExtendActivity"></activity>
+
+
+
+
     </application>
 
 </manifest>

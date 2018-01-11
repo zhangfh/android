@@ -14,7 +14,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButton_DrawerLayout;
     private Button mButton_CardView;
     private Button mButton_Fragment;
-
+    private Button mButton_NewActivity;
+    private Button mButton_Coordinator;
+    private Button mButton_UseBaseActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +38,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mButton_Fragment = (Button)findViewById(R.id.addfragment);
         mButton_Fragment.setOnClickListener(this);
+
+        mButton_NewActivity = (Button)findViewById(R.id.newactivity);
+        mButton_NewActivity.setOnClickListener(this);
+
+        mButton_Coordinator = (Button)findViewById(R.id.usecoordinatory);
+        mButton_Coordinator.setOnClickListener(this);
+
+        mButton_UseBaseActivity = (Button)findViewById(R.id.usebaseactivity);
+        mButton_UseBaseActivity.setOnClickListener(this);
     }
 
     @Override
@@ -60,6 +71,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.addfragment:
                 i = new Intent(this,AddFragment.class);
+                break;
+            case R.id.newactivity:
+                i = new Intent(this,NewActivity.class);
+                break;
+            case R.id.usecoordinatory:
+                i = new Intent(this,CoordinatorLayoutActivity.class);
+                break;
+            case R.id.usebaseactivity:
+                i = new Intent(this,ExtendActivity.class);
+                break;
             default:
                 break;
         }

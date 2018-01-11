@@ -19,3 +19,6 @@
 	 Drawer
 	 cardview
 	 fragment
+	 activity in different process
+	 CoordinatorLayout toolbar FloatingActionButton 
+	 BaseActivity  to use.
