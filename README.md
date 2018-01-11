@@ -25,3 +25,4 @@
 	 Notification
 	 httpserver  -- emulator cannot access
 	 add scrollview 
+	 Service , Intent Service , Service (throught Messenger send message)

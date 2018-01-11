@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButton_UseBaseActivity;
     private Button mButton_UseNotification;
     private Button mButton_StartHttpServer;
-
+    private Button mButton_ServiceTest;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +64,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mButton_StartHttpServer = (Button)findViewById(R.id.starthttpserver);
         mButton_StartHttpServer.setOnClickListener(this);
+
+        mButton_ServiceTest = (Button)findViewById(R.id.servicetest);
+        mButton_ServiceTest.setOnClickListener(this);
     }
 
     @Override
@@ -105,6 +108,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.starthttpserver:
                 i = new Intent(this,HttpServerActivity.class);
                 break;
+            case R.id.servicetest:
+                i = new Intent(this,ServiceActivity.class);
+                break;
+
             default:
                 break;
         }

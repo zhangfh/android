@@ -49,7 +49,10 @@
             android:exported="true" >
         </service>
 
-
+        <activity android:name=".ServiceActivity"></activity>
+        <service android:name=".service.MyIntentService" android:enabled="true"/>
+        <service android:name=".service.MyService"  android:enabled="true"/>
+        <service android:name=".service.ConvertService" android:process=":convertprc"/>
 
     </application>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>

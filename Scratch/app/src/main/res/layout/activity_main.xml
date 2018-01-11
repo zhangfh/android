@@ -87,9 +87,9 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/test1"
+        android:id="@+id/servicetest"
         android:layout_below="@id/starthttpserver"
-        android:text="start http server"/>
+        android:text="android Server Test"/>
 
 </RelativeLayout>
 </ScrollView>
