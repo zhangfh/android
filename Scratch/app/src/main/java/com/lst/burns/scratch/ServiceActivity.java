@@ -23,6 +23,7 @@ import com.lst.burns.scratch.service.MyService;
 //ServiceIntent:  MyIntentService
 //communication by messenger and service: ConvertService.
 
+//Messenger关联一个可以发送消息的Handler
 public class ServiceActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button mButton_Start_Intent_Service;

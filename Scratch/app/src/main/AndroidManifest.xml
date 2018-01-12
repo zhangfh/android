@@ -55,6 +55,13 @@
         <service android:name=".service.ConvertService" android:process=":convertprc"/>
 
         <activity android:name=".FragmentActivity"></activity>
+
+        <activity android:name="ShowMessageActivity"></activity>
+        <activity android:name="GetDataFromActivity"></activity>
+
+        <activity android:name="ListViewActivity"></activity>
+        
+        <activity android:name="AddAnimationActivity"></activity>
     </application>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
     <uses-permission android:name="android.permission.INTERNET" />

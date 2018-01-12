@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButton_StartHttpServer;
     private Button mButton_ServiceTest;
     private Button mButton_AddBaseFragment;
+    private Button mButton_ShowMessageBetweenActivity;
+    private Button mButton_AddListView;
+    private Button mButton_AddAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +75,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mButton_AddBaseFragment = (Button)findViewById(R.id.addbasefragment);
         mButton_AddBaseFragment.setOnClickListener(this);
+
+        mButton_ShowMessageBetweenActivity = (Button)findViewById(R.id.sendextratoactivity);
+        mButton_ShowMessageBetweenActivity.setOnClickListener(this);
+
+        mButton_AddListView = (Button)findViewById(R.id.add_listview);
+        mButton_AddListView.setOnClickListener(this);
+
+        mButton_AddAnimation = (Button)findViewById(R.id.add_animation);
+        mButton_AddAnimation.setOnClickListener(this);
+
 
     }
 
@@ -119,6 +132,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.addbasefragment:
                 i = new Intent(this,FragmentActivity.class);
+                break;
+            case R.id.sendextratoactivity:
+                i = new Intent(this, ShowMessageActivity.class);
+                break;
+            case R.id.add_listview:
+                i = new Intent(this, ListViewActivity.class);
+                break;
+            case R.id.add_animation:
+                i = new Intent(this, AddAnimationActivity.class);
+                break;
             default:
                 break;
         }

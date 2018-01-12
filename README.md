@@ -27,3 +27,6 @@
 	 add scrollview 
 	 Service , Intent Service , Service (throught Messenger send message)
 	 Fragment  use fragmentmanager add, create basefragment(FragmentActivity)
+	 Activity send data through intent and bundle.
+	 ListView Dialog remove item.
+	 View animation

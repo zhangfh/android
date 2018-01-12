@@ -97,6 +97,23 @@
         android:id="@+id/addbasefragment"
         android:layout_below="@id/servicetest"
         android:text="add Base Fragment"/>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendextratoactivity"
+        android:layout_below="@id/addbasefragment"
+        android:text="Send Message Between Activity"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_listview"
+        android:layout_below="@id/sendextratoactivity"
+        android:text="Add List View"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_animation"
+        android:layout_below="@id/add_listview"
+        android:text="Add Animation "/>
 </RelativeLayout>
 </ScrollView>

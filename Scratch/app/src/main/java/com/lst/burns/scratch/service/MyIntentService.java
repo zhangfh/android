@@ -17,6 +17,8 @@ public class MyIntentService extends IntentService {
         Log.d("ZFH","onHandleIntent");
         if(intent != null){
             String name = intent.getStringExtra("name");
+
+           Log.d("ZFH","current thread name " + Thread.currentThread().getName());
             Log.d("ZFH","name " + name);
         }
 
