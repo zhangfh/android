@@ -32,7 +32,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButton_ShowMessageBetweenActivity;
     private Button mButton_AddListView;
     private Button mButton_AddAnimation;
-
+    private Button mButton_AddGridView;
+    private Button mButton_Counter;
+    private Button mButton_Log;
+    private Button mButton_HandlerThread;
+    private Button mButton_RecyclerView;
+    private Button mButton_PostOffice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,6 +90,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mButton_AddAnimation = (Button)findViewById(R.id.add_animation);
         mButton_AddAnimation.setOnClickListener(this);
 
+        mButton_AddGridView = (Button)findViewById(R.id.add_gridview);
+        mButton_AddGridView.setOnClickListener(this);
+
+        mButton_Counter = (Button)findViewById(R.id.counter_activity);
+        mButton_Counter.setOnClickListener(this);
+
+
+        mButton_Log = (Button)findViewById(R.id.log_activity);
+        mButton_Log.setOnClickListener(this);
+
+        mButton_HandlerThread = (Button)findViewById(R.id.handler_thread);
+        mButton_HandlerThread.setOnClickListener(this);
+
+        mButton_RecyclerView = (Button)findViewById(R.id.recycler_view);
+        mButton_RecyclerView.setOnClickListener(this);
+
+        mButton_PostOffice = (Button)findViewById(R.id.post_office);
+        mButton_PostOffice.setOnClickListener(this);
 
     }
 
@@ -141,7 +164,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.add_animation:
                 i = new Intent(this, AddAnimationActivity.class);
+
                 break;
+            case R.id.add_gridview:
+                i = new Intent(this, GridViewActivity.class);
+                break;
+            case R.id.counter_activity:
+                i = new Intent(this,CounterActivity.class);
+                break;
+            case R.id.log_activity:
+                i = new Intent(this, LogActivity.class);
+                break;
+            case R.id.handler_thread:
+                i = new Intent(this, HandlerThreadActivity.class);
+                break;
+            case R.id.recycler_view:
+                i = new Intent(this, RecyclerViewActivity.class);
+                break;
+            case R.id.post_office:
+                i = new Intent(this,PostOfficeActivity.class);
             default:
                 break;
         }

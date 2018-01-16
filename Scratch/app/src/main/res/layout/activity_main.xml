@@ -115,5 +115,46 @@
         android:id="@+id/add_animation"
         android:layout_below="@id/add_listview"
         android:text="Add Animation "/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_gridview"
+        android:layout_below="@id/add_animation"
+        android:text="Grid View "/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/counter_activity"
+        android:layout_below="@id/add_gridview"
+        android:text="Add Counter Activity  "/>
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/log_activity"
+    android:layout_below="@id/counter_activity"
+    android:text="display/write log "/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/handler_thread"
+        android:layout_below="@id/log_activity"
+        android:text="Handler Thread"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/handler_thread"
+        android:text="Recycler View"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_office"
+        android:layout_below="@id/recycler_view"
+        android:text="Post Office"/>
 </RelativeLayout>
 </ScrollView>

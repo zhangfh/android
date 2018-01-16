@@ -30,3 +30,10 @@
 	 Activity send data through intent and bundle.
 	 ListView Dialog remove item.
 	 View animation
+	 GridView get apps (has a bug)
+	 Counter (asynctask )
+	 Log (aidl handler)
+	 Handler Thread
+	 RecylerView
+	 Postoffice(recylerview handler thread)
+	 
