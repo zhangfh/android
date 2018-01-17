@@ -5,7 +5,7 @@
 4.Toolbar (set navigation bar color) 
 5.Iconnics使用
 6.recyclerview fastadapter
-7.timeline recyclerview adapter timeline.
+ 
 8.photoedit load picture ,edit use canvas
 9.lockscreen
 10.IntentService
@@ -36,4 +36,5 @@
 	 Handler Thread
 	 RecylerView
 	 Postoffice(recylerview handler thread)
+	 RecylerView Decoration(recyclerview,  decoration, StaggeredGridLayoutManager)
 	 

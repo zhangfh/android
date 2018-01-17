@@ -156,5 +156,27 @@
         android:id="@+id/post_office"
         android:layout_below="@id/recycler_view"
         android:text="Post Office"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dts_parser"
+        android:layout_below="@id/post_office"
+        android:text="DTS Parser"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_decoration"
+        android:layout_below="@id/dts_parser"
+        android:text="Recycler Decoration"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_decoration2"
+        android:layout_below="@id/recycler_decoration"
+        android:text="Recycler Decoration 2"/>
+
 </RelativeLayout>
 </ScrollView>

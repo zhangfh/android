@@ -38,6 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButton_HandlerThread;
     private Button mButton_RecyclerView;
     private Button mButton_PostOffice;
+    private Button mButton_DtsActivity;
+    private Button mButton_RecyclerDecoration;
+    private Button mButton_RecyclerDecoration2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -109,6 +112,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mButton_PostOffice = (Button)findViewById(R.id.post_office);
         mButton_PostOffice.setOnClickListener(this);
 
+        mButton_DtsActivity = (Button)findViewById(R.id.dts_parser);
+        mButton_DtsActivity.setOnClickListener(this);
+
+        mButton_RecyclerDecoration = (Button)findViewById(R.id.recycler_decoration);
+        mButton_RecyclerDecoration.setOnClickListener(this);
+
+        mButton_RecyclerDecoration2 = (Button)findViewById(R.id.recycler_decoration2);
+        mButton_RecyclerDecoration2.setOnClickListener(this);
     }
 
     @Override
@@ -183,6 +194,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.post_office:
                 i = new Intent(this,PostOfficeActivity.class);
+                break;
+            case R.id.dts_parser:
+                i = new Intent(this, DtsParserActivity.class);
+                break;
+            case R.id.recycler_decoration:
+                i = new Intent(this, RecyclerViewDecorationActivity.class);
+                break;
+            case R.id.recycler_decoration2:
+                i = new Intent(this, RecyclerViewDecoration2Activity.class);
+                break;
             default:
                 break;
         }

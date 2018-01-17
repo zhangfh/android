@@ -76,6 +76,11 @@
         <activity android:name=".RecyclerViewActivity"></activity>
 
         <activity android:name=".PostOfficeActivity"></activity>
+
+        <activity android:name=".DtsParserActivity"></activity>
+
+        <activity android:name="RecyclerViewDecorationActivity"></activity>
+        <activity android:name="RecyclerViewDecoration2Activity"></activity>
     </application>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
     <uses-permission android:name="android.permission.INTERNET" />

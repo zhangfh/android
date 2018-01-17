@@ -5,4 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="bt_accent">#00B8D4</color>
     <color name="battery_saver_mode_color">#fff4511e</color>
+
+    <color name="purple">#69415D</color>
+    <color name="purple_start_color">#6178f2</color>
+    <color name="purple_end_color">#925eff</color>
 </resources>
